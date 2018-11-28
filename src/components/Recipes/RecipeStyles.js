@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { theme } from '../../theme';
 
 export const Recipe = styled.div`
-  background-color: ${theme('colors.background-highlight')};
+  color: ${(props) => props.theme.secondaryColor};
 `;
 
 export const Title = styled.div`
+  color: ${(props) => props.theme.primaryColor};
   font-weight: bold;
 `
 
@@ -14,9 +14,9 @@ export const Ingredients = styled.ul`
 `
 
 export const Ingredient = styled.li`
-  & .name {
+  & .amount {
   }
 
-  & .quantity {
+  & .unit {
   }
 `

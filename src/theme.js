@@ -1,3 +1,5 @@
-import get from 'lodash/get';
-
-export const theme = (key) => (prop) => get(prop.theme, key) || console.warn('missing key', key);
+export default {
+  primaryColor: '#65b7d0',
+  secondaryColor: '#397d92',
+  borderColor: '#cccccc',
+};
