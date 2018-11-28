@@ -3,8 +3,7 @@ import { Recipe, Title, Ingredients, Ingredient } from './RecipeStyles';
 
 const RecipeContainer = ({
   name,
-  ingredients,
-  amount
+  ingredients
 }) => (
   <Recipe>
     <Title>{name}</Title>
