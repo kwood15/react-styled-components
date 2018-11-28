@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Container, Title, Ingredients, Ingredient } from './RecipeStyles';
 
-const Recipe = ({
+const RecipesItem = ({
   name,
   ingredients
 }) => (
@@ -21,4 +23,11 @@ const Recipe = ({
   </Container>
 );
 
-export default Recipe;
+RecipesItem.propTypes = {
+  name: PropTypes.string,
+  ingredients: PropTypes.arrayOf(PropTypes.shape({
+    ingredient: PropTypes.shape.isRequired
+  })).isRequired
+}
+
+export default RecipesItem;
