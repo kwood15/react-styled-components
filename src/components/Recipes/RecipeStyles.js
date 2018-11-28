@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Recipe = styled.div`
+export const Container = styled.div`
   color: ${(props) => props.theme.secondaryColor};
 `;
 

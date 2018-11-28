@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RecipesContainer from './RecipesContainer';
+import RecipeList from './RecipeList';
 import cocktails from '../../data/cocktails';
 
 class Recipes extends Component {
@@ -13,7 +13,7 @@ class Recipes extends Component {
   render() {
     const { recipes } = this.state;
     return (
-      <RecipesContainer recipes={recipes} />
+      <RecipeList recipes={recipes} />
     );
   }
 }

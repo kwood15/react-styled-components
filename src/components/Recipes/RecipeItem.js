@@ -1,11 +1,11 @@
 import React from 'react';
-import { Recipe, Title, Ingredients, Ingredient } from './RecipeStyles';
+import { Container, Title, Ingredients, Ingredient } from './RecipeStyles';
 
-const RecipeContainer = ({
+const Recipe = ({
   name,
   ingredients
 }) => (
-  <Recipe>
+  <Container>
     <Title>{name}</Title>
     <Ingredients>
       {ingredients.map((ingredient, i) => (
@@ -18,7 +18,7 @@ const RecipeContainer = ({
         </Ingredient>
       ))}
     </Ingredients>
-  </Recipe>
+  </Container>
 );
 
-export default RecipeContainer;
+export default Recipe;

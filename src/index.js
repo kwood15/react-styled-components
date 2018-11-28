@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import Recipes from './components/Recipes/index';
+import Recipes from './components/recipes';
 import * as serviceWorker from './serviceWorker';
 import theme from './theme';
 
