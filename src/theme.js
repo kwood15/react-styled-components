@@ -1,5 +1,8 @@
 export default {
-  primaryColor: '#65b7d0',
-  secondaryColor: '#397d92',
-  borderColor: '#cccccc',
+  colours: {
+    primary: '#65b7d0',
+    secondary: '#397d92',
+    white: '#ffffff',
+    midGrey: '#cccccc'
+  }
 };
